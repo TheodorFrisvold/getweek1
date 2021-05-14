@@ -32,6 +32,17 @@
             background-color: azure;
             grid-area: footer;
         }
+
+        @media only screen and (max-width: 600px) {
+            div.page {
+                grid-template-columns: 1fr;
+                grid-template-rows: 20px 1fr 4fr 20px;
+                grid-template-areas: 'header'
+                                     'menu'
+                                     'main'
+                                     'footer'                   
+            }
+        }
     </style>
 
 
